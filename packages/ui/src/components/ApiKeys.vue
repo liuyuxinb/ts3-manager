@@ -9,8 +9,8 @@
               :disabled="!selectedKeys.length"
               @click="deleteDialog = true"
             >
-              <v-icon left>delete</v-icon>
-              Remove
+              <v-icon left>{{ $t('delete') }}delete</v-icon>
+              {{ $t('Remove') }}
             </v-btn>
           </v-card-title>
           <v-card-text>
@@ -30,18 +30,18 @@
       </v-col>
     </v-row>
     <v-btn fab color="primary" fixed bottom right dark @click="addApiKey">
-      <v-icon>add</v-icon>
+      <v-icon>{{ $t('add') }}</v-icon>
     </v-btn>
     <v-dialog v-model="deleteDialog" max-width="500px">
       <v-card>
-        <v-card-title> Delete API Key </v-card-title>
+        <v-card-title>{{ $t('DeleteAPIKey') }}  </v-card-title>
         <v-card-text>
-          Do you really want to delete the selected API key(s)?
+          {{ $t('DeleteAPIKeyTips') }}
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn text color="primary" @click="deleteDialog = false">No</v-btn>
-          <v-btn text color="primary" @click="removeApiKeys">Yes</v-btn>
+          <v-btn text color="primary" @click="deleteDialog = false">{{ $t('No') }}</v-btn>
+          <v-btn text color="primary" @click="removeApiKeys">{{ $t('Yes') }}</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

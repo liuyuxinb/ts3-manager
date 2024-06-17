@@ -7,6 +7,7 @@
       ></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
       <dark-mode-switch></dark-mode-switch>
+      <language-switch></language-switch>
       <file-upload-icon v-if="connected"></file-upload-icon>
       <bell-icon v-if="connected"></bell-icon>
     </v-app-bar>
@@ -81,6 +82,7 @@
 export default {
   components: {
     DarkModeSwitch: () => import("@/components/DarkModeSwitch"),
+    LanguageSwitch: () => import("@/components/LanguageSwitch"),
     BellIcon: () => import("@/components/BellIcon"),
     FileUploadIcon: () => import("@/components/FileUploadIcon"),
     Logo: () => import("@/components/Logo"),

@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col lg="6" md="8" sm="8" cols="12">
         <v-card>
-          <v-card-title>Add API Key</v-card-title>
+          <v-card-title>{{ $t('AddAPI') }}</v-card-title>
           <v-card-text>
             <v-select
               label="Scope"
@@ -49,9 +49,9 @@
               :disabled="selectedScope === undefined"
               @click="addApiKey"
             >
-              Create
+              {{ $t('Create') }}
             </v-btn>
-            <v-btn text @click="$router.go(-1)" color="primary">Close</v-btn>
+            <v-btn text @click="$router.go(-1)" color="primary">{{ $t('Create') }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>

@@ -1,0 +1,14 @@
+{
+  "Connecting": "Connecting",
+  "Language": "Language",
+  "AddAPI": "Add API Key",
+  "Create": "Create",
+  "Close": "Close",
+  "Remove": "Remove",
+  "delete": "delete",
+  "DeleteAPIKey": "Delete API Key",
+  "DeleteAPIKeyTips": "Do you really want to delete the selected API key(s)?",
+  "No": "No",
+  "Yes": "Yes",
+  "add": "add"
+}

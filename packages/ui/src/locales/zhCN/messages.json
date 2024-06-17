@@ -1,0 +1,14 @@
+{
+  "Connecting": "连接",
+  "Language": "语言",
+  "AddAPI": "新增API key",
+  "Create": "创建",
+  "Close": "关闭",
+  "Remove": "移除",
+  "delete": "删除",
+  "DeleteAPIKey": "删除API key",
+  "DeleteAPIKeyTips": "您确定删除API key么?",
+  "No": "否",
+  "Yes": "是",
+  "add": "新增"
+}

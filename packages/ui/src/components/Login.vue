@@ -78,7 +78,7 @@
             >
               <v-icon>arrow_forward</v-icon>Connect
               <template #loader>
-                <span>Connecting...</span>
+                <span>{{ $t('Connecting') }}</span>
               </template>
             </v-btn>
           </v-card-actions>

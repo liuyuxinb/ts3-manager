@@ -20,6 +20,7 @@ import "./registerServiceWorker";
 import store from "./store";
 import router from "./router";
 import socket from "./socket";
+import i18n from './i18n';
 
 (async () => {
   NProgress.configure({
@@ -49,12 +50,13 @@ import socket from "./socket";
   // Adding instance properties which are often used in components
   Vue.prototype.$socket = socket;
   Vue.prototype.$TeamSpeak = TeamSpeak;
-
+ 
   // Render app
   new Vue({
     render: (h) => h(App),
     router,
     store,
     vuetify,
+    i18n
   }).$mount("#app");
 })();
